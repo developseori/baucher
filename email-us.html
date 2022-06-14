@@ -77,7 +77,7 @@
         padding: 0px;
         border:1px solid #F1F2F3;
         border-top: 5px solid #0176F9;
-        background-color: #fff;
+        background-color: #FFF;
       }
       .header-img {
         padding-bottom: 5px;
@@ -95,7 +95,11 @@
         word-break: keep-all;
       }
       table > tbody > td > tr {
-        background-color: #f8f8f8;
+        background-color: #F8F8F8;
+      }
+      .information-table {
+        width: 600px;
+        margin: 15px 18.5px;
       }
       .information-text,
       .qr-text > p {
@@ -106,6 +110,12 @@
       .information {
         font-family: S-CoreDream-5Medium;
         font-size: 20px;
+      }
+      .footer-style {
+        width: 100%;
+        padding: 30px 63px;
+        margin-top: 30px;
+        font-size: 14px;
       }
       .footer-text > a,
       .footer-logo,
@@ -119,10 +129,11 @@
       .footer-logo-links > a{
         margin-right: 10px;
         text-decoration: none;
+        color: #E3E3E3;
       }
       .footer-company-info > p {
         margin: unset;
-        color: #e4e4e4;
+        color: #E4E4E4;
       }
     </style>
   </head>
@@ -211,7 +222,7 @@
     <br/>
           
     <!--Purchase information-->
-    <table class="mx-auto" style="width: 600px;">
+    <table class="information-table">
       <thead>
         <tr>
           <td colspan='2' class="information text-left background-white" style="color: #000; line-height: 40px; padding: 0px 14px 20px;">
@@ -342,6 +353,9 @@
         line-height: 24px;
         word-break: keep-all;
       }
+      .information-table {
+        width: unset;
+      }
       .qr-text > p,
       .information-text {
         font-size: 20px;
@@ -366,11 +380,13 @@
         height: auto;
         margin-bottom: 5px;
       }
-      .boucher-header > .header-title { margin-bottom: 10px; }
+      .boucher-header > .header-title {
+        margin-bottom: 10px;
+      }
       .boucher-header > .header-title,
       .qr-text > span {
         font-family: S-CoreDream-6Bold;
-        font-size: 30px;
+        font-size: 28px;
       }
       .boucher-header > .header-text,
       li {
@@ -389,6 +405,7 @@
       }
       .middle-title,
       .information {
+        width:unset;
         font-family: S-CoreDream-5Medium;
         font-size: 30px;
       }
@@ -401,7 +418,7 @@
         word-break: keep-all;
         text-decoration: none;
       }
-      .footer-logo-links > a{
+      .footer-logo-links > a {
         margin-right: 10px;
         text-decoration: none;
       }
