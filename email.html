@@ -88,6 +88,7 @@
         font-size: 20px;
         word-break: keep-all;
       }
+
       .header > .header-text,
       li {
         font-family: S-CoreDream-3Light;
@@ -108,7 +109,9 @@
         font-size: 20px;
       }
       .footer-text > a,
-      .footer-logo > a {
+      .footer-logo,
+      .footer-company-info
+      {
         font-family: S-CoreDream-4Regular;
         font-size: 12.5px;
         word-break: keep-all;
@@ -117,10 +120,10 @@
       .footer-logo-links > a {
         margin-right: 10px;
         text-decoration: none;
-        color: #e3e3e3;
       }
       .footer-company-info > p {
         margin: unset;
+        color: #e4e4e4;
       }
     </style>
   </head>
@@ -136,7 +139,7 @@
         <div class="header-title" style="padding-bottom: 5px;">
           전 세계 어디서든, 유심사.
         </div>
-        <div class="header-text"> 
+        <div class="header-text">
           <span>
             유심사 eSIM서비스를 이용해주셔서 감사해요!
           </span>
@@ -282,7 +285,7 @@
     <!--footer-->
     <footer>  
       <section class="footer flex">
-        <div class="footer-style text-left border-top-default background-light-white" style="width: 100%; padding: 30px 63px; margin-top: 30px; font-size: 14px; color: #E4E4E4;">
+        <div class="footer-style text-left border-top-default background-light-white" style="width: 100%; padding: 30px 63px; margin-top: 30px; font-size: 14px;">
           <div class="footer-text">
             <a href="https://usimsa.com" target="_blank">
               <img class="w-30" src="https://usimsa.blob.core.windows.net/images/email/%EC%9C%A0%EC%8B%AC%EC%82%ACurl-%EB%A7%81%ED%81%AC.png " />
@@ -308,12 +311,12 @@
           <div class="footer-logo flex flex-space-between mt-default">
             <div class="footer-logo-links">
               <a href="https://glib-mink-bd7.notion.site/2d0b3506a70c4a75898603075657da4f" target="_blank">
-                <span>
+                <span style="color: #e3e3e3;">
                   이용약관
                 </span>
               </a>
               <a href="https://glib-mink-bd7.notion.site/1f1c01137c744f46bfa7b62da9efbf48" target="_blank">
-                <span>
+                <span style="color: #e3e3e3;">
                   개인정보처리방침
                 </span>
               </a>
@@ -333,6 +336,7 @@
       }
       .boucher-header > .header-title,
       .qr-text > span {
+        font-family: S-CoreDream-6Bold;
         font-size: 22px;
       }
       .boucher-header > .header-text,
@@ -348,15 +352,16 @@
       }
       .middle-title,
       .information {
+        font-family: S-CoreDream-5Medium;
         font-size: 22px;
       }
       .footer-text {
-        font-size: 18px;
+        font-size: 15.5px;
         word-spacing: -.7px;
         word-break: keep-all;
       }
       .footer-logo > span {
-        font-size: 18.5px;
+        font-size: 15.5px;
       }
     }
     @media screen and (min-width:0px) and (max-width:400px) {
@@ -368,6 +373,7 @@
       .boucher-header > .header-title { margin-bottom: 10px; }
       .boucher-header > .header-title,
       .qr-text > span {
+        font-family: S-CoreDream-6Bold;
         font-size: 30px;
       }
       .boucher-header > .header-text,
@@ -387,10 +393,34 @@
       }
       .middle-title,
       .information {
+        font-family: S-CoreDream-5Medium;
+        font-size: 30px;
+      }
+      .footer-text > a,
+      .footer-logo,
+      .footer-company-info
+      {
+        font-family: S-CoreDream-4Regular;
+      }
+      .middle-container {
+        height: 230px !important;
+      }
+      .middle-title,
+      .information {
         font-size: 30px;
       }
       .footer-text {
         font-size: 18.5px;
+        word-break: keep-all;
+        text-decoration: none;
+      }
+      .footer-logo-links > a{
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .footer-company-info > p {
+        margin: unset;
+        color: #e4e4e4;
       }
       .footer-logo > span {
         font-size: 18.5px;
