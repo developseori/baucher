@@ -98,6 +98,10 @@
       table > tbody > td > tr {
         background-color: #f8f8f8;
       }
+      .information-table {
+        width: 600px;
+        margin: 15px auto;
+      }
       .information-text,
       .qr-text > p {
         font-family: S-CoreDream-4Regular;
@@ -112,6 +116,12 @@
         font-family: S-CoreDream-5Medium;
         font-size:14px;
       }
+      .footer-style {
+        width: 100%;
+        padding: 30px 63px;
+        margin-top: 30px;
+        font-size: 14px;
+      }
       .footer-text > a,
       .footer-logo,
       .footer-company-info
@@ -124,6 +134,7 @@
       .footer-logo-links > a{
         margin-right: 10px;
         text-decoration: none;
+        color: #E3E3E3;
       }
       .footer-company-info > p {
         margin: unset;
@@ -219,7 +230,7 @@
     </section>
     <br/>
       <!--Purchase information-->
-    <table class="mx-auto" style="width: 600px;">
+    <table class="information-table">
       <thead>
         <tr>
           <td colspan='2' class="information text-left background-white" style="color: #000; line-height: 40px; padding: 0px 14px 20px;">
@@ -227,7 +238,7 @@
           </td>
         </tr>
       </thead>
-    <tbody class="information-text mx-auto text-center background-white" style="position: initial; width: 600px; line-height: 50px; padding: 0px 14px;" cellspacing="0" cellpadding="0">
+      <tbody class="information-text mx-auto text-center background-white" style="position: initial; width: 600px; line-height: 50px; padding: 0px 14px;" cellspacing="0" cellpadding="0">
         <tr >
           <td class="w-120 border-default border-right-unset border-bottom-unset">
             Order_NO
@@ -265,13 +276,13 @@
     <br/>
 
     <!--precautions-->
-    <section style="width: 572px; margin: 0 auto; margin-bottom:40px; margin-top: 20px; background: #eee;">
-      <div class="precautions"style=" padding : 30px 30px 30px 30px; line-height: 20px;">
-        <span class="precautions-text" style="display: flex; justify-content:center;">
+    <section style="width: 572px; margin: 20px auto 40px; background: #eee;">
+      <div style=" padding : 30px; line-height: 20px;">
+        <span class="precautions-text flex flex-justify-center">
           Precautions
         </span>
         <br/>
-          <ul style="font-size: 14px; list-style-type: circle;">
+          <ul style="font-size: 14px; margin-top: 25px; list-style-type: circle;">
             <li>
               If your trip is canceled, you can request a refund within three days of purchase.
             </li>
@@ -368,6 +379,9 @@
         line-height: 24px;
         word-break: keep-all;
       }
+      .information-table {
+        width: unset;
+      }
       .qr-text > p,
       .information-text {
         font-size: 20px;
@@ -376,9 +390,6 @@
       .information {
         font-family: S-CoreDream-5Medium;
         font-size: 22px;
-      }
-      table {
-        padding: 0 20px;
       }
       .precautions-text, .call-mail > p {
         font-family: S-CoreDream-5Medium;
@@ -399,7 +410,9 @@
         height: auto;
         margin-bottom: 5px;
       }
-      .boucher-header > .header-title { margin-bottom: 10px; }
+      .boucher-header > .header-title { 
+        margin-bottom: 10px; 
+      }
       .boucher-header > .header-title,
       .qr-text > span {
         font-family: S-CoreDream-6Bold;
