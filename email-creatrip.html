@@ -76,8 +76,8 @@
         margin: 0 auto;
         padding: 0px;
         border:1px solid #F1F2F3;
-        border-top: 5px solid #00afa0;
-        background-color: #fff;
+        border-top: 5px solid #00AFA0;
+        background-color: #FFF;
       }
       .header-img {
         padding-bottom: 5px;
@@ -96,7 +96,11 @@
         word-break: keep-all;
       }
       table > tbody > td > tr {
-        background-color: #f8f8f8;
+        background-color: #F8F8F8;
+      }
+      .information-table {
+        width: 600px;
+        margin: 15px auto;
       }
       .information-text,
       .qr-text > p {
@@ -112,6 +116,12 @@
         font-family: S-CoreDream-5Medium;
         font-size:14px;
       }
+      .footer-style {
+        width: 100%;
+        padding: 30px 63px;
+        margin-top: 30px;
+        font-size: 14px;
+      }
       .footer-text > a,
       .footer-logo,
       .footer-company-info
@@ -124,10 +134,11 @@
       .footer-logo-links > a{
         margin-right: 10px;
         text-decoration: none;
+        color: #E3E3E3;
       }
       .footer-company-info > p {
         margin: unset;
-        color: #e4e4e4;
+        color: #E4E4E4;
       }
     </style>
   </head>
@@ -154,7 +165,6 @@
         </div>
       </section>
     </header>
-
     <!--esim Information-->
     <section class="mx-auto text-left border-top-default background-light-white" style="padding-top:15px;">
       <div class="middle-title" style="padding: 0 64px; line-height: 40px;">
@@ -217,9 +227,8 @@
         </ul>
       </div>
     </section>
-    <br/>
       <!--Purchase information-->
-    <table class="mx-auto" style="width: 600px;">
+    <table class="information-table">
       <thead>
         <tr>
           <td colspan='2' class="information text-left background-white" style="color: #000; line-height: 40px; padding: 0px 14px 20px;">
@@ -227,7 +236,7 @@
           </td>
         </tr>
       </thead>
-    <tbody class="information-text mx-auto text-center background-white" style="position: initial; width: 600px; line-height: 50px; padding: 0px 14px;" cellspacing="0" cellpadding="0">
+      <tbody class="information-text mx-auto text-center background-white" style="position: initial; width: 600px; line-height: 50px; padding: 0px 14px;" cellspacing="0" cellpadding="0">
         <tr >
           <td class="w-120 border-default border-right-unset border-bottom-unset">
             Order_NO
@@ -263,31 +272,29 @@
       </tbody>
     </table>
     <br/>
-
     <!--precautions-->
-    <section style="width: 572px; margin: 0 auto; margin-bottom:40px; margin-top: 20px; background: #eee;">
-      <div class="precautions"style=" padding : 30px 30px 30px 30px; line-height: 20px;">
-        <span class="precautions-text" style="display: flex; justify-content:center;">
+    <section style="width: 572px; margin: 20px auto 40px; background: #EEE;">
+      <div style=" padding: 30px; line-height: 20px;">
+        <span class="precautions-text flex flex-justify-center">
           Precautions
         </span>
-        <br/>
-          <ul style="font-size: 14px; list-style-type: circle;">
-            <li>
-              If your trip is canceled, you can request a refund within three days of purchase.
-            </li>
-            <li>
-              You can't get a refund if the purchase month has passed.
-            </li>
-            <li>
-              Once installed, eSIM cannot be installed from another mobile phone.
-            </li>
-            <li>
-              You can use it immediately after installation.
-            </li>
-            <li>
-              Please contact the customer center for usage.
-            </li>
-          </ul>
+        <ul style="font-size: 14px; margin-top: 25px; list-style-type: circle;">
+          <li>
+            If your trip is canceled, you can request a refund within three days of purchase.
+          </li>
+          <li>
+            You can't get a refund if the purchase month has passed.
+          </li>
+          <li>
+            Once installed, eSIM cannot be installed from another mobile phone.
+          </li>
+          <li>
+            You can use it immediately after installation.
+          </li>
+          <li>
+            Please contact the customer center for usage.
+          </li>
+        </ul>
       </div>
       <div class="call-mail" style="padding: 0 30px 30px 57px; line-height: 20px;">
         <p>
@@ -302,11 +309,10 @@
         </span>
       </div>
     </section>
-
     <!--footer-->
     <footer>  
-      <section class="footer flex">
-        <div class="footer-style text-left border-top-default background-light-white" style="width: 100%; padding: 30px 63px; margin-top: 30px; font-size: 14px;">
+      <section class="flex">
+        <div class="footer-style text-left border-top-default background-light-white">
           <div class="footer-text">
             <a href="https://usimsa.com" target="_blank">
               <img class="w-30" src="https://usimsa.blob.core.windows.net/images/email/%EC%9C%A0%EC%8B%AC%EC%82%ACurl-%EB%A7%81%ED%81%AC.png " />
@@ -332,12 +338,12 @@
           <div class="footer-logo flex flex-space-between mt-default">
             <div class="footer-logo-links">
               <a href="https://glib-mink-bd7.notion.site/2d0b3506a70c4a75898603075657da4f" target="_blank">
-                <span style="color: #e3e3e3;">
+                <span>
                   Terms of service
                 </span>
               </a>
               <a href="https://glib-mink-bd7.notion.site/1f1c01137c744f46bfa7b62da9efbf48" target="_blank">
-                <span style="color: #e3e3e3;">
+                <span>
                   privacy policy
                 </span>
               </a>
@@ -368,6 +374,9 @@
         line-height: 24px;
         word-break: keep-all;
       }
+      .information-table {
+        width: unset;
+      }
       .qr-text > p,
       .information-text {
         font-size: 20px;
@@ -376,9 +385,6 @@
       .information {
         font-family: S-CoreDream-5Medium;
         font-size: 22px;
-      }
-      table {
-        padding: 0 20px;
       }
       .precautions-text, .call-mail > p {
         font-family: S-CoreDream-5Medium;
@@ -399,7 +405,9 @@
         height: auto;
         margin-bottom: 5px;
       }
-      .boucher-header > .header-title { margin-bottom: 10px; }
+      .boucher-header > .header-title {
+        margin-bottom: 10px;
+      }
       .boucher-header > .header-title,
       .qr-text > span {
         font-family: S-CoreDream-6Bold;
@@ -439,7 +447,7 @@
         word-break: keep-all;
         text-decoration: none;
       }
-      .footer-logo-links > a{
+      .footer-logo-links > a {
         margin-right: 10px;
         text-decoration: none;
       }
